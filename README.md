@@ -12,7 +12,7 @@
 > ```
 > It writes through Jot's real Core Data stack, so (unlike this project) the app's UI reliably reflects changes without needing a relaunch, and no Docker setup is required. It doesn't cover everything this project did (no trash/restore/pinning/reminders as of this writing), but it's the safer, sanctioned way to interact with Jot going forward. This repo is kept for reference.
 
-An [MCP](https://modelcontextprotocol.io) server, implemented as a single Rust binary, that exposes the [Jot](https://apps.apple.com/) macOS notes app's Core Data SQLite store as tools. It lets an MCP client (Claude Desktop, Claude Code, or any spec-compliant client) read and write notes, folders, tags, reminders, and trash state directly in Jot's database.
+An [MCP](https://modelcontextprotocol.io) server, implemented as a single Rust binary, that exposes the [Jot](https://apps.apple.com/us/app/jot-instant-brain-dump/id6755014707) macOS notes app's Core Data SQLite store as tools. It lets an MCP client (Claude Desktop, Claude Code, or any spec-compliant client) read and write notes, folders, tags, reminders, and trash state directly in Jot's database.
 
 Built on the official [`rmcp`](https://github.com/modelcontextprotocol/rust-sdk) SDK.
 
